@@ -1,0 +1,23 @@
+1) Generous Tit For Tat: 
+Cooperates in the first round. It then proceeds to mirror opponent's last move. If the opponents defects there is a certain probability of forgiveness that leads to cooperation. The probability is calculated and normalized through the payoff table. It is 50% with the given table.
+
+2) Gradual: 
+Starts by cooperating. Then for each consecutive defection retaliates accordingly with the same amount of defections. Resets the counter if cooperation is observed. 
+
+3) Joss: 
+Cooperates in the first round. If the opponent defects, it defects in retaliation. If the opponent cooperates it cooperates with 90% probability and defects with 10% probability. 
+
+4) Maniac (δικιά μας προσθήκη, έχει πλάκα γιατί "σπάει" την Tit For Tat):
+Starts by defecting. Proceeds to do the opposite of what the opponent did in the last round. 
+
+5) Pavlov:
+Cooperates in the first round. For each subsequent round calculates the payoff it got in the previous round. If is greater or equal to the C - C payoff, it repeats last move. Otherwise, it switches. It makes more sense if the payoff table is compatible with a PD.
+
+6) Prober (στην πραγματικότητα περιγράφεται καλύτερα ως Remorseful Prober):
+Plays C - C - D for the first three rounds. If no defection is observed, proceeds to defect for subsequent rounds. If mutual defection is observed, plays C. Proceeds to mimic opponents last move. 
+
+7) Prober Mod (δικό μας take στην Prober στρατηγική):
+Plays C - D - C in the first three rounds. If no defections are observed, proceeds to defect from then on. Else it plays standard Tit For Tat.
+
+8)Tit For Two Tats:
+Cooperates in the first two rounds. Retaliates only after two consecutive defections. Else cooperates and forgives single defections. 
